@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var webSocket = WebSocketManager()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(webSocket.tradeItem) { item in
+            Text("price: \(item.price), side: \(item.side)")
         }
-        .padding()
     }
 }
 

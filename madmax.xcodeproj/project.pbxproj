@@ -14,6 +14,9 @@
 		32B82FC32C947BDC0010F477 /* madmaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FC22C947BDC0010F477 /* madmaxTests.swift */; };
 		32B82FCD2C947BDC0010F477 /* madmaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */; };
 		32B82FCF2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */; };
+		676064422CAF08A800948B82 /* BitmexTradeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6760643C2CAF08A800948B82 /* BitmexTradeEntity.swift */; };
+		676064432CAF08A800948B82 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6760643E2CAF08A800948B82 /* WebSocketManager.swift */; };
+		676064442CAF08A800948B82 /* BitmexWebSocketDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676064402CAF08A800948B82 /* BitmexWebSocketDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		32B82FC82C947BDC0010F477 /* madmaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madmaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITests.swift; sourceTree = "<group>"; };
 		32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6760643C2CAF08A800948B82 /* BitmexTradeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmexTradeEntity.swift; sourceTree = "<group>"; };
+		6760643E2CAF08A800948B82 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		676064402CAF08A800948B82 /* BitmexWebSocketDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmexWebSocketDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		32B82FB02C947BDA0010F477 /* madmax */ = {
 			isa = PBXGroup;
 			children = (
+				676064412CAF08A800948B82 /* Data */,
+				6760643D2CAF08A800948B82 /* Entity */,
+				6760643F2CAF08A800948B82 /* WebSocket */,
 				32B82FB12C947BDA0010F477 /* madmaxApp.swift */,
 				32B82FB32C947BDA0010F477 /* ContentView.swift */,
 				32B82FB52C947BDC0010F477 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */,
 			);
 			path = madmaxUITests;
+			sourceTree = "<group>";
+		};
+		6760643D2CAF08A800948B82 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6760643C2CAF08A800948B82 /* BitmexTradeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6760643F2CAF08A800948B82 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				6760643E2CAF08A800948B82 /* WebSocketManager.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		676064412CAF08A800948B82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				676064402CAF08A800948B82 /* BitmexWebSocketDTO.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +292,9 @@
 			files = (
 				32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */,
 				32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */,
+				676064422CAF08A800948B82 /* BitmexTradeEntity.swift in Sources */,
+				676064432CAF08A800948B82 /* WebSocketManager.swift in Sources */,
+				676064442CAF08A800948B82 /* BitmexWebSocketDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
