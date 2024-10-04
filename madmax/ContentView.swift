@@ -1,13 +1,15 @@
 //
 //  ContentView.swift
-//  madmax
+//  OrderBook
 //
-//  Created by Taeheon Woo on 9/13/24.
+//  Created by Kang Minsu on 9/27/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var viewModel = OrderBookViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +18,12 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            viewModel.openWebSocket()
+        }
+        .onDisappear {
+            viewModel.closeWebSocket()
+        }
     }
 }
 
