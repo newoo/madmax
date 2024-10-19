@@ -14,6 +14,10 @@
 		32B82FC32C947BDC0010F477 /* madmaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FC22C947BDC0010F477 /* madmaxTests.swift */; };
 		32B82FCD2C947BDC0010F477 /* madmaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */; };
 		32B82FCF2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */; };
+		45F571D52CAFC44E007C2DE8 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F571D12CAFC44E007C2DE8 /* WebSocket.swift */; };
+		45F571D62CAFC44E007C2DE8 /* WebSocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F571D22CAFC44E007C2DE8 /* WebSocketRequest.swift */; };
+		45F571D72CAFC44E007C2DE8 /* OrderBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F571D32CAFC44E007C2DE8 /* OrderBookItem.swift */; };
+		45F571D82CAFC44E007C2DE8 /* OrderBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F571D42CAFC44E007C2DE8 /* OrderBookViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		32B82FC82C947BDC0010F477 /* madmaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madmaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITests.swift; sourceTree = "<group>"; };
 		32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45F571D12CAFC44E007C2DE8 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		45F571D22CAFC44E007C2DE8 /* WebSocketRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketRequest.swift; sourceTree = "<group>"; };
+		45F571D32CAFC44E007C2DE8 /* OrderBookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBookItem.swift; sourceTree = "<group>"; };
+		45F571D42CAFC44E007C2DE8 /* OrderBookViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBookViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		32B82FB02C947BDA0010F477 /* madmax */ = {
 			isa = PBXGroup;
 			children = (
+				45F571D32CAFC44E007C2DE8 /* OrderBookItem.swift */,
+				45F571D42CAFC44E007C2DE8 /* OrderBookViewModel.swift */,
+				45F571D12CAFC44E007C2DE8 /* WebSocket.swift */,
+				45F571D22CAFC44E007C2DE8 /* WebSocketRequest.swift */,
 				32B82FB12C947BDA0010F477 /* madmaxApp.swift */,
 				32B82FB32C947BDA0010F477 /* ContentView.swift */,
 				32B82FB52C947BDC0010F477 /* Assets.xcassets */,
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F571D72CAFC44E007C2DE8 /* OrderBookItem.swift in Sources */,
 				32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */,
+				45F571D62CAFC44E007C2DE8 /* WebSocketRequest.swift in Sources */,
+				45F571D52CAFC44E007C2DE8 /* WebSocket.swift in Sources */,
+				45F571D82CAFC44E007C2DE8 /* OrderBookViewModel.swift in Sources */,
 				32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
