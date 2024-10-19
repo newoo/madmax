@@ -14,6 +14,8 @@
 		32B82FC32C947BDC0010F477 /* madmaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FC22C947BDC0010F477 /* madmaxTests.swift */; };
 		32B82FCD2C947BDC0010F477 /* madmaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */; };
 		32B82FCF2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */; };
+		32EB19F22CAF904400D9AEA9 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB19F12CAF904400D9AEA9 /* WebSocket.swift */; };
+		32EB19F42CAF9E9300D9AEA9 /* WSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB19F32CAF9E9300D9AEA9 /* WSConnector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		32B82FC82C947BDC0010F477 /* madmaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madmaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITests.swift; sourceTree = "<group>"; };
 		32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32EB19F12CAF904400D9AEA9 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		32EB19F32CAF9E9300D9AEA9 /* WSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSConnector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				32B82FB12C947BDA0010F477 /* madmaxApp.swift */,
 				32B82FB32C947BDA0010F477 /* ContentView.swift */,
+				32EB19F12CAF904400D9AEA9 /* WebSocket.swift */,
+				32EB19F32CAF9E9300D9AEA9 /* WSConnector.swift */,
 				32B82FB52C947BDC0010F477 /* Assets.xcassets */,
 				32B82FB72C947BDC0010F477 /* Preview Content */,
 			);
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EB19F22CAF904400D9AEA9 /* WebSocket.swift in Sources */,
+				32EB19F42CAF9E9300D9AEA9 /* WSConnector.swift in Sources */,
 				32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */,
 				32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */,
 			);

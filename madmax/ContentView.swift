@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    let wsConnter = WSConnector()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +18,9 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+            await wsConnter.connect()
+        }
     }
 }
 
