@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329F9A082CDDB48B006DE2EB /* MadmaxDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F9A072CDDB48B006DE2EB /* MadmaxDTO.swift */; };
+		329F9A0C2CDDB98F006DE2EB /* MaxmaxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F9A0B2CDDB98F006DE2EB /* MaxmaxManager.swift */; };
 		32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FB12C947BDA0010F477 /* madmaxApp.swift */; };
 		32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FB32C947BDA0010F477 /* ContentView.swift */; };
 		32B82FB62C947BDC0010F477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B82FB52C947BDC0010F477 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		329F9A072CDDB48B006DE2EB /* MadmaxDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadmaxDTO.swift; sourceTree = "<group>"; };
+		329F9A0B2CDDB98F006DE2EB /* MaxmaxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxmaxManager.swift; sourceTree = "<group>"; };
 		32B82FAE2C947BDA0010F477 /* madmax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = madmax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82FB12C947BDA0010F477 /* madmaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxApp.swift; sourceTree = "<group>"; };
 		32B82FB32C947BDA0010F477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				32B82FB32C947BDA0010F477 /* ContentView.swift */,
 				32EB19F12CAF904400D9AEA9 /* WebSocket.swift */,
 				32EB19F32CAF9E9300D9AEA9 /* WSConnector.swift */,
+				329F9A072CDDB48B006DE2EB /* MadmaxDTO.swift */,
+				329F9A0B2CDDB98F006DE2EB /* MaxmaxManager.swift */,
 				32B82FB52C947BDC0010F477 /* Assets.xcassets */,
 				32B82FB72C947BDC0010F477 /* Preview Content */,
 			);
@@ -266,6 +272,8 @@
 				32EB19F22CAF904400D9AEA9 /* WebSocket.swift in Sources */,
 				32EB19F42CAF9E9300D9AEA9 /* WSConnector.swift in Sources */,
 				32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */,
+				329F9A082CDDB48B006DE2EB /* MadmaxDTO.swift in Sources */,
+				329F9A0C2CDDB98F006DE2EB /* MaxmaxManager.swift in Sources */,
 				32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
