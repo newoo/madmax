@@ -14,40 +14,21 @@ final class WSConnector {
     }
     
     let webSocket = WebSocket(url: URL(string: "wss://ws.bitmex.com/realtime")!)
-    private var pingTimer: Timer?
+    
+    var onReceiveMessage: ((MadmaxOrderBook) -> Void)?
     
     func connect() async {
         do {
             try await webSocket.connect()
             await sendMessage()
-//            startPingTimer()
             webSocket.startPing(data: Data(), every: .seconds(1))
             for try await message in webSocket.messages {
+                self.handleMessage(message)
                 print("Received message: \(String(data: message, encoding: .utf8))")
             }
         } catch {
             print("Error receiving messages:", error)
         }
-    }
-    
-    func startPingTimer() {
-        pingTimer?.invalidate()
-        pingTimer = .scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-            print("law 타이머 시작")
-            guard let self else { return }
-            
-            self.ping()
-        }
-    }
-    
-    func ping() {
-        webSocket.socketTask.sendPing(pongReceiveHandler: { error in
-            if let error {
-                print("ping error: ", error.localizedDescription)
-            } else {
-                print("ping 성공")
-            }
-        })
     }
 
     func sendMessage() async {
@@ -61,6 +42,27 @@ final class WSConnector {
             try await webSocket.socketTask.send(.string(requestString))
         } catch {
             print("Error sending message:", error)
+        }
+    }
+    
+    func reconnect() async {
+        disconnect()
+        await connect()
+    }
+    
+    func disconnect() {
+        try? webSocket.disconnect()
+    }
+    
+    private func handleMessage(_ data: Data) {
+        do {
+            let decoder = JSONDecoder()
+            let orderBook = try decoder.decode(MadmaxOrderBook.self, from: data)
+            DispatchQueue.main.async {
+                self.onReceiveMessage?(orderBook)
+            }
+        } catch {
+            print("Failed to decode message: \(error)")
         }
     }
 }
